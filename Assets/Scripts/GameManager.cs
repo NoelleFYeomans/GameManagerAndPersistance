@@ -70,43 +70,43 @@ public class GameManager : MonoBehaviour
     private void OnGUI()
     {
         //Health
-        if(GUI.Button(new Rect(300, 10, 100, 30), "Health Up"))
+        if(GUI.Button(new Rect(275, 10, 100, 30), "Health Up"))
         {
             Singleton.Instance.health += 10;
         }
-        if (GUI.Button(new Rect(410, 10, 100, 30), "Health Down"))
+        if (GUI.Button(new Rect(385, 10, 100, 30), "Health Down"))
         {
             Singleton.Instance.health -= 10;
         }
         //Experience
-        if (GUI.Button(new Rect(300, 50, 100, 30), "EXP Up"))
+        if (GUI.Button(new Rect(275, 50, 100, 30), "EXP Up"))
         {
             Singleton.Instance.experience += 100;
         }
-        if (GUI.Button(new Rect(410, 50, 100, 30), "EXP Down"))
+        if (GUI.Button(new Rect(385, 50, 100, 30), "EXP Down"))
         {
             Singleton.Instance.experience -= 100;
         }
         //Score
-        if (GUI.Button(new Rect(300, 90, 100, 30), "Score Up"))
+        if (GUI.Button(new Rect(275, 90, 100, 30), "Score Up"))
         {
             Singleton.Instance.score += 5;
         }
-        if (GUI.Button(new Rect(410, 90, 100, 30), "Score Down"))
+        if (GUI.Button(new Rect(385, 90, 100, 30), "Score Down"))
         {
             Singleton.Instance.score -= 5;
         }
         //Name
-        if (GUI.Button(new Rect(300, 130, 100, 30), "Change Name"))
+        if (GUI.Button(new Rect(275, 130, 100, 30), "Change Name"))
         {
             Singleton.Instance.pName = System.Environment.UserName;
         }
         //Save & Load
-        if (GUI.Button(new Rect(300, 170, 100, 30), "Save"))
+        if (GUI.Button(new Rect(275, 170, 100, 30), "Save"))
         {
             Singleton.Instance.Save();
         }
-        if (GUI.Button(new Rect(410, 170, 100, 30), "Load"))
+        if (GUI.Button(new Rect(385, 170, 100, 30), "Load"))
         {
             Singleton.Instance.loadSaveIngame();
         }

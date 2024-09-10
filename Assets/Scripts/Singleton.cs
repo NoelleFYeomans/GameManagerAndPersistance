@@ -47,8 +47,7 @@ public class Singleton : MonoBehaviour
         GUI.Label(new Rect(10, 100, 100, 30), "Name: " + pName, fontStyle);
         GUI.Label(new Rect(10, 130, 150, 30), "# of Times Launched: " + timesLaunched, fontStyle);
         GUI.Label(new Rect(10, 160, 150, 30), "# of Scenes Switched: " + scenesSwitched, fontStyle);
-
-        GUI.Label(new Rect(10, 200, 150, 30), "# of Game Managers: " + numberOfGManagers, fontStyle);
+        GUI.Label(new Rect(10, 190, 150, 30), "# of Game Managers: " + numberOfGManagers, fontStyle);
     }
     
     public void Save()
